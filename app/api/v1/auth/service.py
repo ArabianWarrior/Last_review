@@ -111,5 +111,6 @@ class AuthService:
             raise DecodeTokenException
         except jwt.exceptions.ExpiredSignatureError:
             raise ExpiredTokenException
-
+#В целом код слишком длинный, если код разделить на AuthService и TokenSercie, код станет более понятным и структуированным
+#Здесь слишком большая концетрация функционала в одном классе AuthService
 
